@@ -1,6 +1,6 @@
-#Simple Weather Bot 
+# Simple Weather Bot 
 
-Simple weather bot written as part of mini-project of CSCI 455 Scripting Languages course in Spring 2017 in NU.
+Simple weather bot written as a part of mini-project of CSCI 455 Scripting Languages course in Spring 2017 at NU.
 
 Used technologies:
 - Python3 - programming language
