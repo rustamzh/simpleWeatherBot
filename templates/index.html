@@ -1,0 +1,29 @@
+{% extends "layout.html" %} {% block body %}
+<div class="row">
+  {% for item in messages %}
+  <div class="sixteen wide column" style="margin-bottom:20px">
+    <div class="ui message">
+      <div class="header">
+        {{item.sender}}
+      </div>
+      <p>{{item.msg}}</p>
+    </div>
+  </div>
+  </br>
+  </br>
+  {% endfor %}
+</div>
+</br>
+<div class="row">
+  <div class="sixteen wide column">
+    <form class="ui form" action="{{ url_for('index') }}" method=post>
+      <div class="field">
+        <label>Message</label>
+        <input type="text" name="msg" />
+      </div>
+      <button class="ui button" type="submit" name=submit>Send</button> {% if messages%}
+      <button class="ui button" type="submit" name=clear>Clear</button> {% endif %}
+    </form>
+  </div>
+</div>
+{% endblock %}
